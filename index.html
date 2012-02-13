@@ -9,12 +9,15 @@
   <meta name="author" content="International Digital Publishing Forum | www.idpf.org" />
   <meta name="description" content="View EPUB books in a web browser using this chrome extension." />
 
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
   <title>Readium Development Area Homepage</title>
 
+  <link>
   <style type="text/css">
     body {
       margin-top: 1.0em;
-      background-color: #EEE;
+      background-color: #FFF;
       font-family: Helvetica, Arial, FreeSans, san-serif;
       color: #000000;
     }
@@ -24,17 +27,22 @@
       width: 700px;
     }
 
-    h1 { font-size: 3.8em; color: #361708; margin-bottom: 3px; }
+    h1 { font-size: 3.8em; color: #333; margin-bottom: 3px; }
     h1 .small { font-size: 0.4em; }
     h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #361708; }
-    h3 { text-align: center; color: #361708; }
-    a { color: #361708; }
+    h2 { font-size: 1.5em; color: #333; }
+    h3 { text-align: center; color: #333; }
+    a { color: #333; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+    #install-btn { text-decoration: none;}
+
+    #install-wrap .icon-white {
+      background-image: url(images/glyphicons-halflings-white.png);
+    }
   </style>
 </head>
 
@@ -69,7 +77,13 @@
       <h2>Install</h2>
       <p>Use the one click install link below to add the extension to chrome.</p>
 
-      <p><a href='releases/readium.crx'>Add To Chrome</a></p>
+
+      <div id='install-wrap'>
+        <a href='releases/readium.crx' class='btn btn-primary' id="install-btn">
+        <i class="icon-plus icon-white"></i>
+        ADD TO CHROME
+        </a>
+      </div>
 
       <p>If you are a developer interested in hacking on the project, clone the repository and then follow the instruction for loading an unpacked extension from the <a href="http://code.google.com/chrome/extensions/getstarted.html#load-ext">chrome extensions page</a></p>
 
