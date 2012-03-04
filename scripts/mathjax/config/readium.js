@@ -22,11 +22,8 @@
  */
 
 MathJax.Hub.Config({
-  jax: ["input/TeX","input/MathML","output/SVG"],
-  extensions: ["tex2jax.js","mml2jax.js","MathEvents.js"],
-  TeX: {
-    extensions: ["noErrors.js","noUndefined.js","autoload-all.js"]
-  },
+  jax: ["input/MathML","output/SVG"],
+  extensions: ["mml2jax.js","MathEvents.js"],
   SVG: {
     linebreaks: { automatic: true }
   },
